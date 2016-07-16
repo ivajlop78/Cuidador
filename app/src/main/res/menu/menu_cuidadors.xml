@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/cuidadors"
+            android:checked="true"
+            android:icon="@mipmap/cuidador_menu50"
+            android:title="@string/mn_cuidador">
+            <menu>
+                <item
+                    android:icon="@mipmap/cuidador_menu50"
+                    android:id="@+id/cuidadors_baixaC"
+                    android:title= "@string/mn_baixaC"/>
+
+                <item
+                    android:icon="@mipmap/cuidador_menu50"
+                    android:id="@+id/cuidadors_modificacioC"
+                    android:title="@string/mn_modificacioC"/>
+
+            </menu>
+        </item>
+
+        <item
+            android:icon="@mipmap/pacient50"
+            android:id="@+id/pacients"
+
+            android:title="@string/mn_pacient" >
+            <menu>
+                <item
+                    android:icon="@mipmap/pacient50"
+                    android:id="@+id/pacients_altaP"
+                    android:title="@string/mn_AltaP"
+                    android:showAsAction="never"
+                    />
+                <item
+                    android:icon="@mipmap/pacient50"
+                    android:id="@+id/pacients_consultaP"
+                    android:title="@string/mn_ConsultaP"/>
+
+            </menu>
+        </item>
+        <item
+            android:id="@+id/visites"
+            android:title="@string/mn_Visites"
+            android:icon="@mipmap/librovisitas50"
+            >
+            <menu>
+                <item
+                    android:id="@+id/visites_altaV"
+                    android:title="@string/mn_AltaV"
+                    android:icon="@mipmap/librovisitas50"
+                    />
+
+                <item
+                    android:id="@+id/visites_consultaV"
+                    android:title="@string/mn_consultaV"
+                    android:icon="@mipmap/librovisitas50"
+                    />
+
+                <item
+                    android:id="@+id/visites_calendari"
+                    android:title="@string/mn_Calendari"
+                    android:icon="@mipmap/librovisitas50"
+                    />
+
+            </menu>
+        </item>
+        <!-- Sección de configuración -->
+        <item
+            android:id="@+id/configuration_section"
+            android:title="@string/configuracion_item">
+            <menu>
+                <item
+                    android:id="@+id/nav_log_out"
+                    android:icon="@android:drawable/ic_lock_power_off"
+                    android:title="@string/log_out_item" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

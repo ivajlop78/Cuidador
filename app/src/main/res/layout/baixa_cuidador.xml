@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilNom"
+                android:layout_below="@+id/TilPass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/nom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textColor="#00175C"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginStart="180dp"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Nom:">
+                    <requestFocus />
+                </TextView>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilCognoms"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/TilNom"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <TextView
+                    android:id="@+id/cognoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Cognoms:"
+                    android:inputType="text"
+                    android:textColor="#00175C"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginStart="180dp"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C"
+                    android:textSize="16sp" >
+                </TextView>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/TilCognoms"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <TextView
+                    android:id="@+id/empresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cognoms"
+                    android:layout_below="@+id/cognoms"
+                    android:ems="10"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginStart="180dp"
+                    android:text="Empresa:"
+                    android:inputType="text"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C"
+                    android:textSize="16sp" >
+                </TextView>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilUsuari"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/usuari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/usuari_c"
+                    android:inputType="text"
+                    android:labelFor="@+id/usuari"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginStart="180dp"
+                    android:textSize="16sp"
+                    android:layout_alignTop="@+id/TilUsuari"
+                    android:layout_alignRight="@+id/btCancelarP"
+                    android:layout_alignEnd="@+id/btCancelarP">
+                </TextView>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilPass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/TilUsuari"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/password_c"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginStart="180dp"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C"
+                    android:textSize="16sp" >
+                </TextView>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btBaixaC"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector"
+                android:drawablePadding="5dp"
+                android:text="@string/bt_Baixa"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="55dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/TilEmpresa"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <Button
+                android:id="@+id/btCancelarP"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector"
+                android:drawablePadding="0dp"
+                android:text="Cancelar"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_alignTop="@+id/btBaixaC"
+                android:layout_toRightOf="@+id/btBaixaC"
+                android:layout_toEndOf="@+id/btBaixaC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Usuario:"
+                android:textColor="#00175C"
+                android:textColorHint="#00175C"
+                android:textColorLink="#00175C"
+                android:labelFor="@+id/usuari"
+                android:layout_alignTop="@+id/TilUsuari"
+                android:layout_marginLeft="124dp"
+                android:layout_marginStart="124dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Password:"
+                android:textColor="#00175C"
+                android:textColorHint="#00175C"
+                android:textColorLink="#00175C"
+                android:labelFor="@+id/password"
+                android:layout_alignTop="@+id/TilPass"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+
+                android:id="@+id/textView2" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Nombre:"
+                android:textColor="#00175C"
+                android:textColorHint="#00175C"
+                android:textColorLink="#00175C"
+                android:labelFor="@+id/nom"
+                android:layout_alignTop="@+id/TilNom"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Apellidos:"
+                android:textColor="#00175C"
+                android:textColorHint="#00175C"
+                android:textColorLink="#00175C"
+                android:labelFor="@+id/cognoms"
+                android:layout_alignTop="@+id/TilCognoms"
+                android:layout_marginLeft="102dp"
+                android:layout_marginStart="102dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Empresa:"
+                android:textColor="#00175C"
+                android:textColorHint="#00175C"
+                android:textColorLink="#00175C"
+                android:labelFor="@+id/empresa"
+                android:layout_alignTop="@+id/TilEmpresa"
+                android:layout_marginLeft="108dp"
+                android:layout_marginStart="108dp"
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilDniV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/DniV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp"
+                    android:ems="10"
+                    android:maxLength="9"
+                    android:hint="@string/dni"
+                    android:inputType="text"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C"
+                    android:textSize="16sp" >
+                    <requestFocus />
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilCognomsV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/TilNomV"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/CognomsV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:hint="@string/cognoms_p"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginStart="150dp"
+                    android:inputType="text"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+            android:id="@+id/TilData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TilCognomsV"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/Data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginStart="80dp"
+                android:ems="10"
+                android:maxLength="16"
+                android:hint="@string/data"
+                android:inputType="text|datetime"
+                android:textColor="#00175C"
+                android:textColorHint="#00175C"
+                android:textColorLink="#00175C"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TilData"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/Hora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp"
+                    android:ems="10"
+                    android:maxLength="16"
+                    android:hint="@string/hora"
+                    android:inputType="text|datetime"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilNomV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/TilDniV"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/NomV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginStart="150dp"
+                    android:textSize="16sp"
+                    android:ems="10"
+                    android:hint="@string/nom_p"
+                    android:inputType="text"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C" >
+
+
+                </TextView>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btModif"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector"
+                android:text="@string/bt_Modif"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="47dp"
+                android:layout_marginStart="47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/TilHora" />
+
+            <Button
+                android:id="@+id/btCancelarP"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector"
+                android:text="Cancelar"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="39dp"
+                android:layout_marginStart="39dp"
+                android:layout_toRightOf="@+id/btModif"
+                android:layout_toEndOf="@+id/btModif"
+                android:layout_alignBottom="@+id/btModif"
+                android:layout_below="@+id/TilHora" />
+
+            <ImageButton
+                android:id="@+id/btDni"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/selector_img_lupa"
+                android:scaleType="fitXY"
+                android:background="@drawable/selector_img_lupa"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/TilDniV"
+                android:layout_alignRight="@+id/btCancelarP"
+                android:layout_alignEnd="@+id/btCancelarP" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Nombre:"
+                android:textColor="#00175C"
+                android:textColorHint="#00175C"
+                android:textColorLink="#00175C"
+                android:labelFor="@+id/nom"
+                android:layout_above="@+id/TilCognomsV"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_alignEnd="@+id/textView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Apellidos:"
+                android:textColor="#00175C"
+                android:textColorHint="#00175C"
+                android:textColorLink="#00175C"
+                android:labelFor="@+id/CognomsV"
+                android:layout_marginLeft="62dp"
+                android:layout_marginStart="62dp"
+                android:layout_alignTop="@+id/TilCognomsV"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView3" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

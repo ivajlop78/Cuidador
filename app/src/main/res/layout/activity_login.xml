@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.uoc.eSalut.CuidadorLogin">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TilUsuari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="60dp">
+            <EditText
+                android:id="@+id/usuari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="80dp"
+                android:layout_marginStart="80dp"
+                android:hint="@string/usuari_c"
+                android:inputType="text"
+                android:textColor="#00175C"
+                android:textColorHint="#00175C"
+                android:textColorLink="#00175C"
+                android:textSize="16sp" >
+            </EditText>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TilPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TilUsuari"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/password_c"
+                android:inputType="textPassword"
+                android:layout_marginLeft="80dp"
+                android:layout_marginStart="80dp"
+                android:textColor="#00175C"
+                android:textColorHint="#00175C"
+                android:textColorLink="#00175C"
+                android:textSize="16sp" >
+            </EditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btAltaP"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector"
+            android:drawablePadding="5dp"
+            android:text="@string/bt_Entrar"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/TilPass"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/btAltaC"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector"
+            android:drawablePadding="0dp"
+            android:text="Crear cuenta"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignTop="@+id/btAltaP"
+            android:layout_toRightOf="@+id/btAltaP"
+            android:layout_toEndOf="@+id/btAltaP" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TilLblAlta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btAltaP"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/Tildni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/dni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/nom"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp"
+                    android:ems="10"
+                    android:maxLength="9"
+                    android:hint="@string/dni"
+                    android:inputType="text"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C"
+                    android:textSize="16sp" >
+                    <requestFocus />
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilCognomsP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/TilNomP">
+                <EditText
+                    android:id="@+id/CognomsP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:hint="@string/cognoms_p"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp"
+                    android:inputType="text"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilDir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/TilCognomsP"
+                >
+                <EditText
+                    android:id="@+id/Dir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp"
+                    android:textSize="16sp"
+                    android:ems="10"
+                    android:hint="@string/adreca"
+                    android:inputType="text"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilTelCte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/TilPerCte">
+                <EditText
+                    android:id="@+id/TelCte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp"
+                    android:ems="10"
+                    android:hint="@string/tel_persona_cte"
+                    android:inputType="text|phone"
+                    android:textSize="16sp"
+                    android:maxLength="9"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilTelPac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/TilTelCte"
+                >
+                <EditText
+                    android:id="@+id/TelPac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp"
+                    android:textSize="16sp"
+                    android:ems="10"
+                    android:maxLength="9"
+                    android:hint="@string/tel_pacient"
+                    android:inputType="text|phone"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilNomP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Tildni"
+                >
+                <EditText
+                    android:id="@+id/NomP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp"
+                    android:textSize="16sp"
+                    android:ems="10"
+                    android:hint="@string/nom_p"
+                    android:inputType="text"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C" >
+
+
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilPerCte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/TilDir">
+                <EditText
+                    android:id="@+id/PerCte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:hint="@string/persona_cte"
+                    android:inputType="text"
+                    android:textColor="#00175C"
+                    android:textColorHint="#00175C"
+                    android:textColorLink="#00175C" />
+            </android.support.design.widget.TextInputLayout>
+
+                 <Button
+                     android:id="@+id/btAltaP"
+                     android:layout_width="120dp"
+                     android:layout_height="40dp"
+                     android:background="@drawable/selector"
+                     android:text="@string/bt_Alta"
+                     android:textColor="#FFFFFF"
+                     android:textSize="16sp"
+                     android:textStyle="bold"
+                     android:layout_marginLeft="47dp"
+                     android:layout_marginStart="47dp"
+                     android:layout_below="@+id/TilNivell"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentStart="true" />
+
+                 <Button
+                     android:id="@+id/btCancelarP"
+                     android:layout_width="120dp"
+                     android:layout_height="20dp"
+                     android:background="@drawable/selector"
+                     android:text="Cancel·lar"
+                     android:textColor="#FFFFFF"
+                     android:textSize="16sp"
+                     android:textStyle="bold"
+                     android:layout_marginLeft="39dp"
+                     android:layout_marginStart="39dp"
+                     android:layout_below="@+id/TilNivell"
+                     android:layout_toRightOf="@+id/btAltaP"
+                     android:layout_toEndOf="@+id/btAltaP"
+                     android:layout_alignBottom="@+id/btAltaP" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TilNivell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/TilTelPac"
+                >
+                <Spinner
+                    android:id="@+id/nivell"
+                    android:prompt="@string/nivell_p"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:entries="@array/nivell"
+                    android:theme="@style/mySpinnerItemStyle"
+                    android:ems="10"
+                    android:textSize="11sp"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_below="@id/TilTelPac"
+                    style="@style/mySpinnerItemStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

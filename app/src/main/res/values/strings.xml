@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Cuidador</string>
+    <string name="cuidador">Cuidador</string>
+    <string name="text_presentacio">Bienvenidos a la App</string>
+    <string name="action_settings">Settings</string>
+    <string name="bt_entrada">Entrada</string>
+    <string name="title_activity_cuidador">Cuidador</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="dni">* D.N.I.</string>
+    <string name="dni_pacient">* D.N.I. Paciente</string>
+    <string name="nom_p">* Nombre</string>
+    <string name="cognoms_p">* Apellidos</string>
+    <string name="adreca">* Dirección</string>
+    <string name="persona_cte">* Persona contacto</string>
+    <string name="tel_persona_cte">* Teléfono persona contacto</string>
+    <string name="tel_pacient">* Teléfono paciente</string>
+    <string name="tel_ent_pacient">Ponga su número de teléfono</string>
+    <string name="nivell_p">* Nivel smartphone</string>
+    <string name="bt_Alta">Alta</string>
+    <string name="bt_Entrar">Entrar</string>
+    <string name="bt_Modif">Modificar</string>
+    <string name="bt_Baixa">Dar de baja</string>
+    <string name="bt_trucada">Llamada emergéncia</string>
+    <string name="empresa_c"> Nombre empresa</string>
+    <string name="usuari_c">* Usuario</string>
+    <string name="password_c">* Password</string>
+    <string name="repassword_c">* Repetir Password</string>
+    <string name="data">* Fecha(dd/mm/yyyy)</string>
+    <string name="hora">* Hora(hh:mm)</string>
+    <string name="btPacient">Soy paciente</string>
+    <string name="btCuidador">Soy cuidador</string>
+    <string name="parseAppId">J7m86Hqgx8ytYcpn0bcAmNltutEDsJka5FnkQXNZ</string>
+    <string name="parseClientID">08C1mgXU2f1UIxtbGTAbCA68KbTe5naGYLI9MnoC</string>
+    <string name="bt_consultaVP">Consulta visitas</string>
+    <string name="btModifDades">Modificar datos cuidador</string>
+    <string name="btConsultaP">Consultar pacientes</string>
+    <string name="btConsultaV">Consultar visitas</string>
+
+    <string name="mn_cuidador">Cuidadores</string>
+    <string name="mn_baixaC">Baja cuidador</string>
+    <string name="mn_modificacioC">Modificación cuidador</string>
+    <string name="mn_pacient">Pacientes</string>
+    <string name="mn_AltaP">Alta paciente</string>
+    <string name="mn_BaixaP">Baja paciente</string>
+    <string name="mn_ConsultaP">Consulta paciente</string>
+    <string name="mn_Visites">Visitas</string>
+    <string name="mn_AltaV">Alta visita</string>
+    <string name="mn_Calendari">Calendario</string>
+    <string name="mn_consultaV">Consulta visitas</string>
+
+
+    <string-array name="nivell">
+        <item>Principiante</item>
+        <item>Intermedio</item>
+    </string-array>
+
+    <array name="navigation_iconos">
+        <item>@mipmap/cuidador_menu50b</item>
+        <item>@mipmap/pacient50b</item>
+        <item>@mipmap/librovisitas50b</item>
+
+    </array>
+    <drawable name="fondoAzul">#00175C</drawable>
+
+    <string name="title_activity_prueba">Prueba</string>
+    <string name="title_activity_cuidador_activiy">Entrada cuidador</string>
+    <string name="title_activity_menu_pacient">Menú paciente</string>
+    <string name="title_activity_pacient_telefon">Teléfono paciente</string>
+    <string name="title_activity_cuidador_alta">Alta cuidador</string>
+
+    <string name="log_out_item">Cerrar Sesión</string>
+    <string name="configuracion_item">Configuración</string>
+    <string name="not_logged_in">Not logged in</string>
+    <string name="no_items">No items, click + to started adding todos.</string>
+    <string name="title_activity_todo_list">TodoListActivity</string>
+</resources>
